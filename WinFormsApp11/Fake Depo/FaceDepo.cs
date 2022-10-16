@@ -1,42 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
+﻿using System.Text.Json;
 using WinFormsApp11.Models;
 
-namespace WinFormsApp11.Fake_Depo
+namespace WinFormsApp11.Fake_Depo;
+
+public class FakeDepo
 {
-    public class FakeDepo
+
+    const string _apiKey = "580270e";
+    const string _url = $"http://www.omdbapi.com/?apikey={_apiKey}";
+    public static string[] Movies = new string[] { "Ezel", "Kurtlar Vadisi", "The Avengers", "Eşkıya Dünyaya Hükümdar Olmaz", "Ağanatiq", "Narcos" };
+
+    public static List<Movie> GetMovies()
     {
+        List<Movie> MoviesTemp = new List<Movie>();
 
-        const string _apiKey = "580270e";
-        const string _url = $"http://www.omdbapi.com/?apikey={_apiKey}";
-        public static string[] Movies = new string[] { "Ezel", "Kurtlar Vadisi", "The Avengers", "Eşkıya Dünyaya Hükümdar Olmaz", "Ağanatiq","Narcos"};
-
-        public static List<Movie> GetMovies()
+        for (int i = 0; i < Movies.Length; i++)
         {
-            List<Movie> MoviesTemp = new List<Movie>();
-
-            for (int i = 0; i < Movies.Length; i++)
-            {
-                string search = $"{_url}&t={Movies[i]}";
+            string search = $"{_url}&t={Movies[i]}";
 
 
-                using HttpClient client = new();
-                string jsonStr = client.GetStringAsync(search).Result;
+            using HttpClient client = new();
+            string jsonStr = client.GetStringAsync(search).Result;
 
 
-                var movie = JsonSerializer.Deserialize<Movie>(jsonStr);
-                MoviesTemp.Add(movie);
-            }
-
-
-
-            return MoviesTemp;
-
+            var movie = JsonSerializer.Deserialize<Movie>(jsonStr);
+            MoviesTemp.Add(movie!);
         }
 
+
+
+        return MoviesTemp;
+
     }
+
 }

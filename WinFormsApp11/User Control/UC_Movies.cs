@@ -1,28 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using WinFormsApp11.Models;
+﻿using WinFormsApp11.Models;
 
-namespace WinFormsApp11.User_Control
+namespace WinFormsApp11.User_Control;
+
+public partial class UC_Movies : UserControl
 {
-    public partial class UC_Movies : UserControl
+    public UC_Movies(Movie movie)
     {
-        public UC_Movies(Movie movie)
-        {
-            InitializeComponent();
-            lblNameMovie.Text = movie.Title;
-            lblImdb.Text = movie?.imdbRating?.ToString();
-            lblYearMovie.Text = movie?.Year;
-            pictureBox1.Load(movie?.Poster);
-        }
-
-
-
+        InitializeComponent();
+        pictureBox1.Load(movie?.Poster);
+        lblNameMovie.Text = movie?.Title;
+        lblImdb.Text = movie?.imdbRating?.ToString();
+        lblYearMovie.Text = movie?.Year;
+        lblGenreMovie.Text = movie?.Genre;
+        lblWriterMovie.Text = movie?.Writer;
+        lblActorsMovies.Text = movie?.Actors;
+        lblLanguageMovies.Text = movie?.Language;
+        lblCountryMovie.Text = movie?.Country;
+        lblDirectorMovies.Text= movie?.Director;
+        lblPlotMovies.Text = movie?.Plot;  
     }
+
+
 }
