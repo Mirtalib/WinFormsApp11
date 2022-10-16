@@ -156,13 +156,12 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox1.BackgroundImage = global::WinFormsApp11.Properties.Resources.movies;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(137, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(138, 8);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(127, 82);
-            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.Size = new System.Drawing.Size(125, 77);
+            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // MainForms
@@ -196,11 +195,11 @@
         private TextBox textBox1;
         private Panel panel2;
         private Button btnSearch;
-        private PictureBox pictureBox1;
         private Label lblNameMovie;
         private TableLayoutPanel tableLayoutPanel2;
         private Panel panel1;
         private Panel panel3;
         private Panel panel4;
+        private PictureBox pictureBox1;
     }
 }
