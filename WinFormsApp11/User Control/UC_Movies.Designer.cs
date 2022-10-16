@@ -33,16 +33,13 @@
             this.lblPlotMovies = new System.Windows.Forms.Label();
             this.lblPlot = new System.Windows.Forms.Label();
             this.lblDirectorMovies = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblCountryMovie = new System.Windows.Forms.Label();
             this.lblDirector = new System.Windows.Forms.Label();
             this.lblCountry = new System.Windows.Forms.Label();
             this.lblNameMovie = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.lblLanguageMovies = new System.Windows.Forms.Label();
             this.lblLanguage = new System.Windows.Forms.Label();
             this.lblYearMovie = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.lblActorsMovies = new System.Windows.Forms.Label();
             this.lblActors = new System.Windows.Forms.Label();
             this.lblYear = new System.Windows.Forms.Label();
@@ -78,16 +75,13 @@
             this.panel1.Controls.Add(this.lblPlotMovies);
             this.panel1.Controls.Add(this.lblPlot);
             this.panel1.Controls.Add(this.lblDirectorMovies);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblCountryMovie);
             this.panel1.Controls.Add(this.lblDirector);
             this.panel1.Controls.Add(this.lblCountry);
             this.panel1.Controls.Add(this.lblNameMovie);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.lblLanguageMovies);
             this.panel1.Controls.Add(this.lblLanguage);
             this.panel1.Controls.Add(this.lblYearMovie);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.lblActorsMovies);
             this.panel1.Controls.Add(this.lblActors);
             this.panel1.Controls.Add(this.lblYear);
@@ -107,7 +101,7 @@
             // lblPlotMovies
             // 
             this.lblPlotMovies.ForeColor = System.Drawing.Color.Yellow;
-            this.lblPlotMovies.Location = new System.Drawing.Point(283, 208);
+            this.lblPlotMovies.Location = new System.Drawing.Point(285, 208);
             this.lblPlotMovies.Name = "lblPlotMovies";
             this.lblPlotMovies.Size = new System.Drawing.Size(342, 122);
             this.lblPlotMovies.TabIndex = 5;
@@ -128,22 +122,11 @@
             this.lblDirectorMovies.AutoSize = true;
             this.lblDirectorMovies.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDirectorMovies.ForeColor = System.Drawing.Color.Yellow;
-            this.lblDirectorMovies.Location = new System.Drawing.Point(304, 49);
+            this.lblDirectorMovies.Location = new System.Drawing.Point(307, 49);
             this.lblDirectorMovies.Name = "lblDirectorMovies";
             this.lblDirectorMovies.Size = new System.Drawing.Size(114, 20);
             this.lblDirectorMovies.TabIndex = 0;
             this.lblDirectorMovies.Text = "Director Movies";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(304, 174);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Country Movie";
             // 
             // lblCountryMovie
             // 
@@ -189,16 +172,6 @@
             this.lblNameMovie.TabIndex = 4;
             this.lblNameMovie.Text = "Name Movie";
             // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.ForeColor = System.Drawing.Color.Yellow;
-            this.label3.Location = new System.Drawing.Point(318, 143);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(307, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Language Movies";
-            // 
             // lblLanguageMovies
             // 
             this.lblLanguageMovies.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -230,17 +203,6 @@
             this.lblYearMovie.Size = new System.Drawing.Size(82, 20);
             this.lblYearMovie.TabIndex = 3;
             this.lblYearMovie.Text = "Year Movie";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.ForeColor = System.Drawing.Color.Yellow;
-            this.label4.Location = new System.Drawing.Point(289, 113);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 20);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Actors Movies";
             // 
             // lblActorsMovies
             // 
@@ -280,7 +242,7 @@
             this.lblWriterMovie.AutoSize = true;
             this.lblWriterMovie.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblWriterMovie.ForeColor = System.Drawing.Color.Yellow;
-            this.lblWriterMovie.Location = new System.Drawing.Point(289, 80);
+            this.lblWriterMovie.Location = new System.Drawing.Point(292, 80);
             this.lblWriterMovie.Name = "lblWriterMovie";
             this.lblWriterMovie.Size = new System.Drawing.Size(95, 20);
             this.lblWriterMovie.TabIndex = 0;
@@ -323,7 +285,7 @@
             this.lblGenreMovie.AutoSize = true;
             this.lblGenreMovie.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblGenreMovie.ForeColor = System.Drawing.Color.Yellow;
-            this.lblGenreMovie.Location = new System.Drawing.Point(289, 19);
+            this.lblGenreMovie.Location = new System.Drawing.Point(292, 19);
             this.lblGenreMovie.Name = "lblGenreMovie";
             this.lblGenreMovie.Size = new System.Drawing.Size(93, 20);
             this.lblGenreMovie.TabIndex = 0;
@@ -389,8 +351,5 @@
         private Label lblDirector;
         private Label lblPlot;
         private Label lblPlotMovies;
-        private Label label2;
-        private Label label3;
-        private Label label4;
     }
 }
